@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-sm-8 sol-sm-offset-2">
+    <div id="form-container">
+      <div class="page-header text-center">
+        <h2>Please fill the application</h2>
+        <div>
+          <a ui-sref-active="active" ui-sref=".part1"><span>1</span>人数</a>
+          <a ui-sref-active="active" ui-sref=".part2"><span>2</span>房间数</a>
+          <a ui-sref-active="active" ui-sref=".part2"><span>3</span>宾馆</a>
+        </div>
+      </div>
+
+      <form id="signup-form" ng-submit="processForm()">
+        <div id="form-views" ui-view></div>
+      </form>
+    </div>
+  </div>
+</div>

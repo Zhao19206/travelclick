@@ -1,0 +1,21 @@
+<!-- form-interests.html -->
+<label>How many room(s) you want?</label>
+
+<div class="form-group">
+	<div class="select">
+		<select ng-model="formData.rooms">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+</div>
+
+<div class="form-group">
+	<div class="col-xs-6 col-xs-offset-3">
+		<a ui-sref="main.part3({adult:formData.adult, children:formData.children, rooms:formData.rooms})" class="btn btn-block btn-info">Next Section<span class="glyphicon glyphicon-circle-arrow-right"></span>
+		</a>
+	</div>
+</div>
